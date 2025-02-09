@@ -3,7 +3,7 @@
 [ext_resource type="Shader" path="res://Characters/Player/White.gdshader" id="1"]
 [ext_resource type="Script" path="res://Weapons/Weapon.gd" id="2"]
 [ext_resource type="Script" path="res://Weapons/WeaponHitbox.gd" id="3"]
-[ext_resource type="Texture2D" uid="uid://b7bjytio6a77m" path="res://Art/19+ icons/white.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://jwqkl188cx0u" path="res://Art/AbilityIcons/white.png" id="5_baio1"]
 [ext_resource type="Script" path="res://Weapons/UI.gd" id="6"]
 
 [sub_resource type="ShaderMaterial" id="1"]
@@ -13,11 +13,11 @@ shader_parameter/active = false
 
 [sub_resource type="ParticleProcessMaterial" id="2"]
 spread = 180.0
-gravity = Vector3(0, 0, 0)
 initial_velocity_min = 20.0
 initial_velocity_max = 40.0
 angular_velocity_min = 10.0
 angular_velocity_max = 40.0
+gravity = Vector3(0, 0, 0)
 turbulence_enabled = true
 
 [node name="Weapon" type="Node2D"]
@@ -74,7 +74,7 @@ offset_right = 404.0
 offset_bottom = 298.0
 scale = Vector2(0.15, 0.15)
 fill_mode = 8
-texture_progress = ExtResource("4")
+texture_progress = ExtResource("5_baio1")
 tint_progress = Color(0.25098, 0.235294, 0.235294, 0.839216)
 
 [connection signal="area_entered" from="Node2D/Sprite2D/Hitbox" to="Node2D/Sprite2D/Hitbox" method="_on_Hitbox_area_entered"]

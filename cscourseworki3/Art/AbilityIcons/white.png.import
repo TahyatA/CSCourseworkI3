@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btb7aq6qyt3o4"
-path="res://.godot/imported/swirlB.png-8c5edbcb0ea7931a1347bc1d4910d6f5.ctex"
+uid="uid://jwqkl188cx0u"
+path="res://.godot/imported/white.png-697c4b104c8e6884fc40fc2ea9618f52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/19+ icons/swirlB.png"
-dest_files=["res://.godot/imported/swirlB.png-8c5edbcb0ea7931a1347bc1d4910d6f5.ctex"]
+source_file="res://Art/AbilityIcons/white.png"
+dest_files=["res://.godot/imported/white.png-697c4b104c8e6884fc40fc2ea9618f52.ctex"]
 
 [params]
 

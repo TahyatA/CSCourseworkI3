@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Roguelike Tutorial"
+config/name="super cool coursework by yours truly"
+config/description="i am so epic and amazing it's unbelievable how good i am at everything"
 run/main_scene="res://Game.tscn"
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"
