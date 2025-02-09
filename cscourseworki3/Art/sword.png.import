@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg7gf32l3sqnw"
-path="res://.godot/imported/knight_run_anim_f3.png-4f8fac7f3c9af7c668270b83df8ea809.ctex"
+uid="uid://df51ex61kmtwk"
+path="res://.godot/imported/sword.png-68eb22af03564042b24bb6580663cd2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/v1.1 dungeon crawler 16x16 pixel pack/heroes/knight/knight_run_anim_f3.png"
-dest_files=["res://.godot/imported/knight_run_anim_f3.png-4f8fac7f3c9af7c668270b83df8ea809.ctex"]
+source_file="res://Art/sword.png"
+dest_files=["res://.godot/imported/sword.png-68eb22af03564042b24bb6580663cd2d.ctex"]
 
 [params]
 
