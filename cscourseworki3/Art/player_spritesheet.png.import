@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcxpm7x8lmgsb"
-path="res://.godot/imported/Battle Axe.png-2f190b06d011f6fc34ad5d1f1329e0c5.ctex"
+uid="uid://dxhhxrfp7o8s0"
+path="res://.godot/imported/player_spritesheet.png-8de3151fdbb70327125d5a052de934fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Battle Axe.png"
-dest_files=["res://.godot/imported/Battle Axe.png-2f190b06d011f6fc34ad5d1f1329e0c5.ctex"]
+source_file="res://Art/player_spritesheet.png"
+dest_files=["res://.godot/imported/player_spritesheet.png-8de3151fdbb70327125d5a052de934fa.ctex"]
 
 [params]
 

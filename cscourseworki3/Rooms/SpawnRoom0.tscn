@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dns3ep35p4d6v"]
+[gd_scene load_steps=5 format=3 uid="uid://dns3ep35p4d6v"]
 
 [ext_resource type="PackedScene" uid="uid://7oeqdu22e1q5" path="res://Rooms/Room.tscn" id="1"]
-[ext_resource type="PackedScene" path="res://Rooms/Furniture and Traps/Door.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://r88elkkvv60o" path="res://Rooms/Furniture and Traps/Door.tscn" id="2"]
 [ext_resource type="PackedScene" path="res://Rooms/Furniture and Traps/Torch.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://Weapons/WarHammer.tscn" id="4"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(32, 16)
@@ -29,12 +28,8 @@ position = Vector2(112, 128)
 position = Vector2(112, 48)
 shape = SubResource("1")
 
-[node name="WarHammer" parent="." index="9" instance=ExtResource("4")]
-position = Vector2(208, 88)
-on_floor = true
-
-[node name="Torch" parent="." index="10" instance=ExtResource("3")]
+[node name="Torch" parent="." index="9" instance=ExtResource("3")]
 position = Vector2(72, 24)
 
-[node name="Torch2" parent="." index="11" instance=ExtResource("3")]
+[node name="Torch2" parent="." index="10" instance=ExtResource("3")]
 position = Vector2(168, 24)
