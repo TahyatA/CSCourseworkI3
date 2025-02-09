@@ -6,7 +6,7 @@ class_name DungeonRoom
 const SPAWN_EXPLOSION_SCENE: PackedScene = preload("res://Characters/Enemies/SpawnExplosion.tscn")
 
 const ENEMY_SCENES: Dictionary = {
-	"FLYING_CREATURE": preload("res://Characters/Enemies/Flying Creature/FlyingCreature.tscn"),
+	"MUSHROOM": preload("res://Characters/Enemies/Mushroom/MushroomEnemy.tscn"),
 	"GOBLIN": preload("res://Characters/Enemies/Goblin/Goblin.tscn"), "SLIME_BOSS": preload("res://Characters/Enemies/Bosses/SlimeBoss.tscn")
 }
 
@@ -49,7 +49,7 @@ func _spawn_enemies() -> void:
 			num_enemies = 15
 		else:
 			if randi() % 2 == 0:
-				enemy = ENEMY_SCENES.FLYING_CREATURE.instantiate()
+				enemy = ENEMY_SCENES.MUSHROOM.instantiate()
 			else:
 				enemy = ENEMY_SCENES.GOBLIN.instantiate()
 		enemy.position = enemy_position.position

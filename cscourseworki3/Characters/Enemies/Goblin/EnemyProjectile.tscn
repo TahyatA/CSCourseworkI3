@@ -8,8 +8,8 @@ radius = 4.0
 
 [node name="EnemyProjectile" instance=ExtResource("1_uoeyp")]
 
-[node name="Sprite2D" parent="." index="0"]
-texture = ExtResource("2_jhxp2")
-
-[node name="CollisionShape2D" parent="." index="1"]
+[node name="CollisionShape2D" parent="." index="0"]
 shape = SubResource("CircleShape2D_6g4ya")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_jhxp2")
