@@ -1,6 +1,6 @@
 extends Weapon
 
-const ARROW_SCENE: PackedScene = preload("res://Weapons/Arrow.tscn")
+const ARROW_SCENE: PackedScene = preload("res://Weapons/PlayerProjectile.tscn")
 
 
 func shoot(offset: int) -> void:

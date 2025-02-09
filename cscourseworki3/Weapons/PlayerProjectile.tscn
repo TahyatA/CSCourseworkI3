@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4fknel2vnw1t"]
+
+[ext_resource type="PackedScene" uid="uid://gwe3pqdm131b" path="res://Weapons/Projectile.tscn" id="1_klilp"]
+[ext_resource type="Texture2D" uid="uid://dqixxspuy4i66" path="res://Art/player_projectile.png" id="2_jvj8s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_21xci"]
+radius = 8.0
+
+[node name="Arrow" instance=ExtResource("1_klilp")]
+collision_mask = 2
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_21xci")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_jvj8s")

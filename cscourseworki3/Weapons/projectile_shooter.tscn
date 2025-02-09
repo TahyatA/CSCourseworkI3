@@ -1,9 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://bwxfm550sp8u8"]
+[gd_scene load_steps=14 format=3 uid="uid://bwxfm550sp8u8"]
 
 [ext_resource type="PackedScene" uid="uid://jvc34qam0obx" path="res://Weapons/Weapon.tscn" id="1_6lslp"]
 [ext_resource type="Script" path="res://Weapons/projectile_shooter.gd" id="2_piwt5"]
 [ext_resource type="Texture2D" uid="uid://dcmn1s8l57xeg" path="res://Art/gun_sprite.png" id="3_1cqun"]
+[ext_resource type="Shader" path="res://Characters/Player/White.gdshader" id="3_7ijxo"]
 [ext_resource type="Texture2D" uid="uid://xxg28n7ovk2h" path="res://Art/AbilityIcons/ranged_weapon_ability.png" id="4_fqrqu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6k186"]
+resource_local_to_scene = true
+shader = ExtResource("3_7ijxo")
+shader_parameter/active = false
 
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 1.0
@@ -232,6 +238,7 @@ ranged_weapon = true
 rotation_offset = 180
 
 [node name="Sprite2D" parent="Node2D" index="0"]
+material = SubResource("ShaderMaterial_6k186")
 position = Vector2(7.00004, -11)
 rotation = 4.71239
 texture = ExtResource("3_1cqun")
