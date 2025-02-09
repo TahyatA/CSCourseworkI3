@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Art/TorchLight.png" type="Texture2D" id=1]
-[ext_resource path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/props_itens/torch_spritesheet.png" type="Texture2D" id=2]
+[ext_resource type="Texture2D" uid="uid://du50brb47a3bp" path="res://Art/Effects/TorchLight.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://r7wtgfupv22u" path="res://Art/TilesetsAndProps/torch_spritesheet.png" id="2"]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )

@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=203 format=3 uid="uid://b6ahcd27jnf2v"]
 
-[ext_resource type="Texture2D" uid="uid://d2e6iidvt8eo3" path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/full tilemap.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://d2e6iidvt8eo3" path="res://Art/TilesetsAndProps/full tilemap.png" id="1"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_f17ua"]
 vertices = PackedVector2Array(-8, -8, 8, -8, 8, -0.47145, -8, -1.05287)

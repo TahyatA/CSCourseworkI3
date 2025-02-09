@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bm155ruyh7phk"]
 
 [ext_resource type="Script" path="res://Items/HealthPotion.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://c1bbrf7qwjsk8" path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/props_itens/potion_red.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c1bbrf7qwjsk8" path="res://Art/TilesetsAndProps/potion_red.png" id="2"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
 radius = 2.80928

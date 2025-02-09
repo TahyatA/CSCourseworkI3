@@ -36,6 +36,7 @@ func _open_doors() -> void:
 
 func _close_entrance() -> void:
 	for entry_position in entrance.get_children():
+		print(tilemap.local_to_map(entry_position.position))
 		tilemap.set_cell(0, tilemap.local_to_map(entry_position.position), 1, Vector2i.ZERO)
 		tilemap.set_cell(0, tilemap.local_to_map(entry_position.position) + Vector2i.DOWN, 2, Vector2i.ZERO)
 

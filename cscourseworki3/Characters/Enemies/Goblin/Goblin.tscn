@@ -1,9 +1,9 @@
 [gd_scene load_steps=30 format=3 uid="uid://dlx82s7ngu5af"]
 
 [ext_resource type="PackedScene" uid="uid://dkpis7w2h85hp" path="res://Characters/Enemies/Enemy.tscn" id="1"]
-[ext_resource type="Texture2D" uid="uid://6nmcbyj7hu8v" path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_idle_spritesheet.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://g4wrospvmdxf" path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_spritesheet.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://5s650l0opflc" path="res://Art/v1.1 dungeon crawler 16x16 pixel pack/effects (new)/enemy_afterdead_explosion_anim_spritesheet.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://6nmcbyj7hu8v" path="res://Art/Enemies/goblin_idle_spritesheet.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://g4wrospvmdxf" path="res://Art/Enemies/goblin_run_spritesheet.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://5s650l0opflc" path="res://Art/Effects/enemy_afterdead_explosion_anim_spritesheet.png" id="4"]
 [ext_resource type="Script" path="res://Characters/Enemies/Goblin/Goblin.gd" id="5"]
 [ext_resource type="Script" path="res://Characters/Enemies/Goblin/GoblinFSM.gd" id="6"]
 

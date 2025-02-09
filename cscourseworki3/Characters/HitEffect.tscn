@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://7xmf2blsjnsw"]
 
-[ext_resource type="Texture2D" uid="uid://bjup1ea5kal2m" path="res://Art/hit_effect_anim_spritesheet.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bjup1ea5kal2m" path="res://Art/Effects/hit_effect_anim_spritesheet.png" id="1"]
 [ext_resource type="Script" path="res://PlayAnimation.gd" id="2"]
 
 [sub_resource type="Animation" id="1"]

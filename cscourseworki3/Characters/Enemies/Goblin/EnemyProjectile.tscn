@@ -1,15 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://gfa4qnde1ng"]
 
 [ext_resource type="PackedScene" uid="uid://gwe3pqdm131b" path="res://Weapons/Projectile.tscn" id="1_uoeyp"]
-[ext_resource type="Texture2D" uid="uid://rgn0gahymuwf" path="res://Art/enemy_projectile.png" id="2_jhxp2"]
+[ext_resource type="Texture2D" uid="uid://rgn0gahymuwf" path="res://Art/Weapons/enemy_projectile.png" id="2_jhxp2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6g4ya"]
 radius = 4.0
 
 [node name="EnemyProjectile" instance=ExtResource("1_uoeyp")]
 
-[node name="CollisionShape2D" parent="." index="0"]
-shape = SubResource("CircleShape2D_6g4ya")
-
-[node name="Sprite2D" parent="." index="1"]
+[node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_jhxp2")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_6g4ya")
