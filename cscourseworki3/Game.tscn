@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://u6okdsefflug"]
+[gd_scene load_steps=9 format=3 uid="uid://u6okdsefflug"]
 
 [ext_resource type="PackedScene" uid="uid://dftvfv1jceskv" path="res://Characters/Player/Player.tscn" id="2"]
 [ext_resource type="Script" path="res://Game.gd" id="3"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://df3cenyvvexih" path="res://Art/UI/health_ui.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://c535uh5i7hsc8" path="res://Art/UI/progress bar.png" id="6"]
 [ext_resource type="Script" path="res://GUI/UI.gd" id="7"]
+[ext_resource type="AudioStream" uid="uid://m6w3ntcbucm1" path="res://Music/thetower1.mp3" id="7_nh7e0"]
 
 [sub_resource type="StyleBoxFlat" id="1"]
 bg_color = Color(0.713726, 0.670588, 0.670588, 1)
@@ -57,6 +58,11 @@ position = Vector2(133.183, 118.911)
 max_hp = 4
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_nh7e0")
+autoplay = true
+bus = &"Music"
 
 [connection signal="hp_changed" from="Player" to="UI" method="_on_Player_hp_changed"]
 [connection signal="weapon_droped" from="Player" to="UI" method="_on_Player_weapon_droped"]

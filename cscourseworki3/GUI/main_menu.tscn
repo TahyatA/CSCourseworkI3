@@ -105,7 +105,6 @@ text = "Master Volume"
 
 [node name="MasterSlider" parent="OptionsMenu/OptionsMenuButtons" instance=ExtResource("2_0d3oh")]
 layout_mode = 2
-value = 0.0
 bus_name = "Master"
 
 [node name="MusicVolumeLabel" type="Label" parent="OptionsMenu/OptionsMenuButtons"]
@@ -114,7 +113,6 @@ text = "Music Volume"
 
 [node name="MusicSlider" parent="OptionsMenu/OptionsMenuButtons" instance=ExtResource("2_0d3oh")]
 layout_mode = 2
-value = 0.0
 bus_name = "Music"
 
 [node name="SFXVolumeLabel" type="Label" parent="OptionsMenu/OptionsMenuButtons"]
@@ -123,7 +121,6 @@ text = "SFX Volume"
 
 [node name="SFXSlider" parent="OptionsMenu/OptionsMenuButtons" instance=ExtResource("2_0d3oh")]
 layout_mode = 2
-value = 0.0
 bus_name = "SFX"
 
 [node name="BackButton" type="Button" parent="OptionsMenu/OptionsMenuButtons"]
