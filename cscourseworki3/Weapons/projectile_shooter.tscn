@@ -12,8 +12,8 @@ shader = ExtResource("3_7ijxo")
 shader_parameter/active = false
 
 [sub_resource type="CapsuleShape2D" id="1"]
-radius = 1.0
-height = 2.0
+radius = 6.0
+height = 12.0
 
 [sub_resource type="Animation" id="Animation_h2uqm"]
 length = 0.001
@@ -256,3 +256,5 @@ libraries = {
 
 [node name="AbilityIcon" parent="UI" index="0"]
 texture_under = ExtResource("4_fqrqu")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="5"]

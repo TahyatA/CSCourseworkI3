@@ -9,7 +9,6 @@ func ready():
 
 
 func _input(event: InputEvent) -> void:
-	pass
-	#if event.is_action_pressed("ui_focus_next"):
-		#get_tree().paused = true	
+	if event.is_action_pressed("reset"):
+		get_tree().reload_current_scene()
 	

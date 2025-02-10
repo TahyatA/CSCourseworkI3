@@ -40,5 +40,9 @@ func _enter_state(_previous_state: int, new_state: int) -> void:
 			animation_player.play("move")
 		states.hurt:
 			animation_player.play("hurt")
+			audio_player.stream = preload("res://SFX/hurt1.wav")
+			audio_player.play()
 		states.dead:
 			animation_player.play("dead")
+			audio_player.stream = preload("res://SFX/explosion1.wav")
+			audio_player.play() 

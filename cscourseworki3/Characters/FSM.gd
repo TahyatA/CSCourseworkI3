@@ -7,6 +7,7 @@ var state: int = -1: set = set_state
 
 @onready var parent: Character = get_parent()
 @onready var animation_player: AnimationPlayer = parent.get_node("AnimationPlayer")
+@onready var audio_player : AudioStreamPlayer2D = parent.get_node("AudioStreamPlayer2D")
 
 
 func _physics_process(delta: float) -> void:
@@ -42,3 +43,7 @@ func _enter_state(_previous_state: int, _new_state: int) -> void:
 
 func _exit_state(_state_exited: int) -> void:
 	pass
+
+func play_sound(track : String):
+	audio_player.stream = load(track)
+	audio_player.play()

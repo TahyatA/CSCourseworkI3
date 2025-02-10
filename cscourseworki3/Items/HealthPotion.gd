@@ -4,6 +4,7 @@ extends Area2D
 
 
 func _on_HealthPotion_body_entered(player: CharacterBody2D) -> void:
+	$AudioStreamPlayer2D.play()
 	collision_shape.set_deferred("disabled", true)
 	player.hp += 1
 	SavedData.hp += 1

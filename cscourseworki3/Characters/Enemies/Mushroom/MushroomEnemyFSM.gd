@@ -31,5 +31,7 @@ func _enter_state(_previous_state: int, new_state: int) -> void:
 			animation_player.play("fly")
 		states.hurt:
 			animation_player.play("hurt")
+			play_sound("res://SFX/hurt1.wav")
 		states.dead:
 			animation_player.play("dead")
+			play_sound("res://SFX/explosion1.wav")

@@ -38,6 +38,8 @@ func _get_path_to_move_away_from_player() -> void:
 
 
 func _throw_knife() -> void:
+	$AudioStreamPlayer2D.stream = preload("res://SFX/projectileshoot1.wav")
+	$AudioStreamPlayer2D.play()
 	var projectile: Area2D = THROWABLE_KNIFE_SCENE.instantiate()
 	projectile.launch(global_position, (player.position - global_position).normalized(), projectile_speed)
 	get_tree().current_scene.add_child(projectile)

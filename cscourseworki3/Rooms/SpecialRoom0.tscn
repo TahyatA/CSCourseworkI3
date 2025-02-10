@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://7oeqdu22e1q5" path="res://Rooms/Room.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://dh1lljshplw3y" path="res://Rooms/RoomWithWeapon0.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://dsqgtpyy4hu5w" path="res://Rooms/Room1.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://Rooms/Furniture and Traps/Door.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://r88elkkvv60o" path="res://Rooms/Furniture and Traps/Door.tscn" id="4"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(104, 16)

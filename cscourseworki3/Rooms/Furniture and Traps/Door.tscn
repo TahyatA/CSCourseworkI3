@@ -1,8 +1,9 @@
-[gd_scene load_steps=25 format=3 uid="uid://r88elkkvv60o"]
+[gd_scene load_steps=26 format=3 uid="uid://r88elkkvv60o"]
 
 [ext_resource type="Script" path="res://Rooms/Furniture and Traps/Door.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bebupc443w3u" path="res://Art/TilesetsAndProps/door_spritesheet.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://b68bxf20bccdo" path="res://Art/TilesetsAndProps/door_fullyopen.png" id="3"]
+[ext_resource type="AudioStream" uid="uid://bhasi585birbc" path="res://SFX/door.mp3" id="4_n3ufo"]
 
 [sub_resource type="AtlasTexture" id="1"]
 atlas = ExtResource("2")
@@ -203,3 +204,7 @@ shape = SubResource("18")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 occluder = SubResource("19")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_n3ufo")
+bus = &"SFX"

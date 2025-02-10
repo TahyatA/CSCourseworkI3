@@ -13,6 +13,7 @@ var max_hp: int = 4
 
 
 func _ready() -> void:
+	$FloorCount.text = "Current floor: %s" % [SavedData.num_floor + 1]
 	max_hp = player.max_hp
 	_update_health_bar(100)
 
