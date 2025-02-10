@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Rooms.gd" id="4"]
 [ext_resource type="Texture2D" uid="uid://df3cenyvvexih" path="res://Art/UI/health_ui.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://c535uh5i7hsc8" path="res://Art/UI/progress bar.png" id="6"]
-[ext_resource type="Script" path="res://UI.gd" id="7"]
+[ext_resource type="Script" path="res://GUI/UI.gd" id="7"]
 
 [sub_resource type="StyleBoxFlat" id="1"]
 bg_color = Color(0.713726, 0.670588, 0.670588, 1)
