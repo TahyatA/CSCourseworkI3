@@ -17,7 +17,7 @@ func _init() -> void:
 
 
 func _ready() -> void:
-	assert(collision_shape != null)
+	collision_shape.disabled = false
 	timer.wait_time = 1
 	add_child(timer)
 
