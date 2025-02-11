@@ -34,16 +34,25 @@ func get_input() -> void:
 	elif Input.is_action_just_released("ui_attack"):
 		if animation_player.is_playing() and animation_player.current_animation == "charge":
 			animation_player.play("attack")
-			play_sound("res://SFX/slash.mp3")
+			if SavedData.equipped_weapon_index == 0:
+				play_sound("res://SFX/slash.mp3")
+			else:
+				play_sound("res://SFX/projectileshoot2.wav")
 		elif charge_particles.emitting:
 			animation_player.play("strong_attack")
-			play_sound("res://SFX/swing.mp3")
+			if SavedData.equipped_weapon_index == 0:
+				play_sound("res://SFX/swing.mp3")
+			else:
+				play_sound("res://SFX/projectileshoot2.wav")
 	elif Input.is_action_just_pressed("ui_active_ability") and animation_player.has_animation("active_ability") and not is_busy() and can_active_ability:
 		can_active_ability = false
 		cool_down_timer.start()
 		ui.recharge_ability_animation(cool_down_timer.wait_time)
 		animation_player.play("active_ability")
-		play_sound("res://SFX/slash.mp3")
+		if SavedData.equipped_weapon_index == 0:
+			play_sound("res://SFX/slash.mp3")
+		else:
+			play_sound("res://SFX/projectileshoot2.wav")
 
 
 func move(mouse_direction: Vector2) -> void:

@@ -45,6 +45,5 @@ func _throw_knife() -> void:
 	get_tree().current_scene.add_child(projectile)
 
 
-
 func _on_AttackTimer_timeout() -> void:
 	can_attack = true
