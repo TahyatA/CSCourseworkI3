@@ -1,5 +1,6 @@
 extends Enemy
 
+var path = []
 
 func _process(_delta: float) -> void:
 	if is_instance_valid(player):
@@ -24,3 +25,9 @@ func _spawn_slime(direction: Vector2) -> void:
 	slime.max_hp = max_hp/2.0
 	get_parent().add_child(slime)
 	slime.velocity += direction * 150
+
+func move() -> void:
+	if path.size() >= 2:  # Ensure path has a destination
+		var direction = (path[1] - path[0]).normalized()  # Move towards player
+		velocity = direction * 150  # Adjust speed as needed
+		move_and_slide()  # Apply movement

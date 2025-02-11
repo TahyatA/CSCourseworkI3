@@ -19,7 +19,6 @@ func _ready() -> void:
 	
 func _state_logic(_delta: float) -> void:
 	if state == states.jump:
-		parent.chase()
 		parent.move()
 		
 		
@@ -43,8 +42,8 @@ func _enter_state(_previous_state: int, new_state: int) -> void:
 			animation_player.play("idle")
 		states.jump:
 			if is_instance_valid(parent.player):
-				#parent.path = [parent.global_position, parent.player.position]
-				#hitbox.knockback_direction = (parent.path[1] - parent.path[0]).normalized()
+				parent.path = [parent.global_position, parent.player.position]
+				hitbox.knockback_direction = (parent.path[1] - parent.path[0]).normalized()
 				animation_player.play("jump")
 		states.hurt:
 			animation_player.play("hurt")
