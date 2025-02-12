@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwbyvwhi2vuv1"]
+[gd_scene load_steps=5 format=3 uid="uid://bwbyvwhi2vuv1"]
 
 [ext_resource type="PackedScene" uid="uid://7oeqdu22e1q5" path="res://Rooms/Room.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://r88elkkvv60o" path="res://Rooms/Furniture and Traps/Door.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dmay3kb4dokgj" path="res://Rooms/Furniture and Traps/Spikes.tscn" id="3_gsp63"]
 
 [sub_resource type="RectangleShape2D" id="1"]
-size = Vector2(16, 8)
+size = Vector2(48, 8)
 
 [node name="Room0" instance=ExtResource("1")]
 
@@ -20,7 +21,7 @@ layer_0/tile_data = PackedInt32Array(262150, 26, 0, 262151, 25, 0, 393223, 24, 0
 [node name="Marker2D" type="Marker2D" parent="Entrance" index="0"]
 position = Vector2(152, 168)
 
-[node name="Position2D2" type="Marker2D" parent="Entrance" index="1"]
+[node name="Marker2D2" type="Marker2D" parent="Entrance" index="1"]
 position = Vector2(168, 168)
 
 [node name="Door" parent="Doors" index="0" instance=ExtResource("2")]
@@ -29,8 +30,8 @@ position = Vector2(64, 16)
 [node name="Marker2D" type="Marker2D" parent="EnemyPositions" index="0"]
 position = Vector2(56, 88)
 
-[node name="Position2D2" type="Marker2D" parent="EnemyPositions" index="1"]
-position = Vector2(208, 56)
+[node name="Spikes" parent="Traps" index="0" instance=ExtResource("3_gsp63")]
+position = Vector2(168, 104)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
 position = Vector2(160, 160)

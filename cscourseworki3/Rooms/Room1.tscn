@@ -21,7 +21,7 @@ layer_0/tile_data = PackedInt32Array(65541, 30, 0, 458753, 31, 0)
 [node name="Marker2D" type="Marker2D" parent="Entrance" index="0"]
 position = Vector2(104, 120)
 
-[node name="Position2D2" type="Marker2D" parent="Entrance" index="1"]
+[node name="Marker2D2" type="Marker2D" parent="Entrance" index="1"]
 position = Vector2(120, 120)
 
 [node name="Door" parent="Doors" index="0" instance=ExtResource("2")]

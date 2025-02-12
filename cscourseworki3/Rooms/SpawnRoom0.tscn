@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dns3ep35p4d6v"]
+[gd_scene load_steps=7 format=3 uid="uid://dns3ep35p4d6v"]
 
 [ext_resource type="PackedScene" uid="uid://7oeqdu22e1q5" path="res://Rooms/Room.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://r88elkkvv60o" path="res://Rooms/Furniture and Traps/Door.tscn" id="2"]
 [ext_resource type="PackedScene" path="res://Rooms/Furniture and Traps/Torch.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://bm155ruyh7phk" path="res://Items/HealthPotion.tscn" id="4_y1ib7"]
+[ext_resource type="PackedScene" uid="uid://bb4btkq81dag" path="res://Rooms/RoomWithWeapon.tscn" id="5_0g4cu"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(32, 16)
@@ -36,4 +37,7 @@ position = Vector2(72, 24)
 position = Vector2(168, 24)
 
 [node name="HealthPotion" parent="." index="11" instance=ExtResource("4_y1ib7")]
-position = Vector2(208, 75)
+position = Vector2(173, 127)
+
+[node name="RoomWithWeapon" parent="." index="12" instance=ExtResource("5_0g4cu")]
+position = Vector2(208, 47)
