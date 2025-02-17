@@ -42,7 +42,7 @@ func _enter_state(_previous_state: int, new_state: int) -> void:
 			play_sound("res://SFX/hurt2.mp3")
 			parent.cancel_attack()
 		states.dead:
-			
 			play_sound("res://SFX/deathsfx.mp3")
 			animation_player.play("dead")
+			SceneTransistor.start_transition_to("res://GUI/defeat.tscn")
 			parent.cancel_attack()
