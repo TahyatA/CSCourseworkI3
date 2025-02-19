@@ -1,10 +1,10 @@
 extends Weapon
 
-const ARROW_SCENE: PackedScene = preload("res://Weapons/PlayerProjectile.tscn")
+const projectile: PackedScene = preload("res://Weapons/PlayerProjectile.tscn")
 
 
 func shoot(offset: int) -> void:
-	var arrow: Area2D = ARROW_SCENE.instantiate()
+	var arrow: Area2D = projectile.instantiate()
 	get_tree().current_scene.add_child(arrow)
 	arrow.launch(global_position, Vector2.LEFT.rotated(deg_to_rad(rotation_degrees + offset)), 400)
 
