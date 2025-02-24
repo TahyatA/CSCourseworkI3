@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bhsdw1ufhf8r4"]
+[gd_scene load_steps=3 format=3 uid="uid://bhsdw1ufhf8r4"]
 
 [ext_resource type="Script" path="res://GUI/endgamescreen.gd" id="1_vrcfc"]
+[ext_resource type="Texture2D" uid="uid://ckhn0dmt1w1e7" path="res://GUI/gameoverscreen.png" id="2_gxaw5"]
 
-[node name="VictoryScreen" type="Control"]
+[node name="DefeatScreen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,6 +11,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vrcfc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_right = 480.0
+offset_bottom = 272.0
+texture = ExtResource("2_gxaw5")
+expand_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -25,13 +33,13 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="DefeatLabel" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-text = "You died!"
-
 [node name="BackToMenu" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "Back to menu"
+text = "Return to Menu"
+
+[node name="Replay" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Play Again"
 
 [connection signal="pressed" from="VBoxContainer/BackToMenu" to="." method="_on_back_to_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer/Replay" to="." method="_on_replay_pressed"]

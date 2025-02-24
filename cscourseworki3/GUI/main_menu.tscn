@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bs4ie85kf1noi"]
+[gd_scene load_steps=5 format=3 uid="uid://bs4ie85kf1noi"]
 
 [ext_resource type="Script" path="res://GUI/main_menu.gd" id="1_yu5qd"]
 [ext_resource type="PackedScene" uid="uid://chf2k8ew41u4q" path="res://GUI/volume_slider.tscn" id="2_0d3oh"]
+[ext_resource type="Texture2D" uid="uid://deedcxam8hvli" path="res://GUI/mainmenu.png" id="2_18krf"]
 [ext_resource type="AudioStream" uid="uid://cavxooa1n2y1m" path="res://Music/thetower7.mp3" id="3_j5e1f"]
 
 [node name="Menu" type="Control"]
@@ -13,22 +14,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yu5qd")
 
-[node name="GameTitleLabel" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -121.0
-offset_top = 14.0
-offset_right = 122.0
-offset_bottom = 40.0
-grow_horizontal = 2
-text = "SUPER AWESEOM GAME TITLE!"
-horizontal_alignment = 1
-vertical_alignment = 3
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 270.0
+texture = ExtResource("2_18krf")
+expand_mode = 1
 
 [node name="MainMenu" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -50,9 +43,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -49.0
-offset_top = -50.5
+offset_top = -19.0
 offset_right = 49.0
-offset_bottom = 50.5
+offset_bottom = 82.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -72,6 +65,7 @@ size_flags_vertical = 3
 text = "Quit"
 
 [node name="OptionsMenu" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -79,9 +73,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -20.0
-offset_top = -20.0
+offset_top = 20.0
 offset_right = 20.0
-offset_bottom = 20.0
+offset_bottom = 60.0
 grow_horizontal = 2
 grow_vertical = 2
 
